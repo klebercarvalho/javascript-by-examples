@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<!--
+    The switch statement is missing a case for "Apple". Add it, and set text to "How you like them apples?"
+    Hint: Do not forget the colon after the case, and end it with a break; statement.
+  -->
+
+<body>
+
+  <input id="myInput" type="text" value="Apple">
+  <button onclick="checkFruit()">Check Fruit</button>
+  <p id="demo"></p>
+
+  <script>
+    function checkFruit() {
+      var text;
+      var fruits = document.getElementById("myInput").value;
+
+      switch (fruits) {
+        case "Banana":
+          text = "Banana is good!";
+          break;
+        case "Orange":
+          text = "I am not a fan of orange.";
+          break;
+
+        // add case here
+
+        default:
+          text = "I have never heard of that fruit.";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+
+</body>
+
+</html>
